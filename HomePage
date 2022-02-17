@@ -1,0 +1,113 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+class HomePage extends StatefulWidget {
+  static final String id =("home_page");
+
+
+
+  @override
+  _HomePageState createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  int count = 0;
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Container(
+        width:1000,
+        height: 1000,
+
+          decoration: BoxDecoration(
+            border: Border(
+              top: BorderSide(color: Colors.blue,width: 10,style: BorderStyle.solid),
+              left: BorderSide(color: Colors.blue,width: 10,style: BorderStyle.solid),
+              bottom: BorderSide(color: Colors.blue,width: 10,style: BorderStyle.solid),
+              right: BorderSide(color: Colors.blue,width: 10,style: BorderStyle.solid),
+            ),
+
+
+          ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          
+          children: [
+            Container(
+              padding: EdgeInsets.all(40),
+              margin: EdgeInsets.all(25),
+              width:400,
+
+
+              decoration: BoxDecoration(
+                border: Border(
+                  top: BorderSide(color: Colors.black,width: 10,style: BorderStyle.solid),
+                  left: BorderSide(color: Colors.black,width: 10,style: BorderStyle.solid),
+                  bottom: BorderSide(color: Colors.black,width: 10,style: BorderStyle.solid),
+                  right: BorderSide(color: Colors.black,width: 10,style: BorderStyle.solid),
+                ),
+
+
+              ),
+            ),
+            Container(
+              padding: EdgeInsets.all(20),
+              margin: EdgeInsets.all(20),
+              width:500,
+              height: 470,
+
+
+              decoration: BoxDecoration(
+                border: Border(
+                  top: BorderSide(color: Colors.deepPurpleAccent,width: 10,style: BorderStyle.solid),
+                  left: BorderSide(color: Colors.deepPurpleAccent,width: 10,style: BorderStyle.solid),
+                  bottom: BorderSide(color: Colors.deepPurpleAccent,width: 10,style: BorderStyle.solid),
+                  right: BorderSide(color: Colors.deepPurpleAccent,width: 10,style: BorderStyle.solid),
+                ),
+
+
+              ),
+              child: Row(
+                children: [
+                  Expanded(
+                      flex: 3,
+                      
+                      child: Container(
+                      decoration: BoxDecoration(
+                       border: Border(
+                         top: BorderSide(color: Colors.red,width: 10,style: BorderStyle.solid),
+                         left: BorderSide(color: Colors.red,width: 10,style: BorderStyle.solid),
+                         bottom: BorderSide(color: Colors.red,width: 10,style: BorderStyle.solid),
+                         right: BorderSide(color: Colors.red,width: 10,style: BorderStyle.solid),
+                       ),
+
+
+
+
+                    ),
+                  )),
+                  Expanded(
+                      flex: 1,
+                      child: Container(
+                       decoration: BoxDecoration(
+                          border: Border(
+                            top: BorderSide(color: Colors.black,width: 10,style: BorderStyle.solid),
+                            left: BorderSide(color: Colors.black,width: 10,style: BorderStyle.solid),
+                            bottom: BorderSide(color: Colors.black,width: 10,style: BorderStyle.solid),
+                            right: BorderSide(color: Colors.black,width: 10,style: BorderStyle.solid),
+                          ),
+
+
+                        ),
+                      )),
+                ],
+              ),
+            ),
+          ],
+        ),
+        )
+
+    );
+  }
+}
